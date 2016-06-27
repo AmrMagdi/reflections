@@ -1,0 +1,14 @@
+What happens when you initialize a repository? Why do you need to do it?
+	
+	1- When you initialize a repository a hidden directory called '.git' is created that shall hold all the meta-data concerning that repository: commits history, branches, .. etc.
+	2- The files that already was contained in the directory in which the '.git' directory was created would be considered as files in the new made repository.
+	3- These new files are marked as "untracked" meaning that no history concerning these files is found.
+	4- If you run 'git log' an error:' fatal: bad default revision 'HEAD' ' is shown indicating that no commits can be found, this happens since creating a new repository in a local directory doesn't mean that commits has been made, in such case you would have to create a commit yourself which will relatively change the status of the files in the repository from being "untracked".
+
+	Why do you need to do it? 
+	To be able to track the files in that repository and create a history log for the changes that shall be done to it. In other words, you do it when you want to use version control (through git) with some files you have.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	
+	Staging area is an intermediate area into which you add files that you wish to commit into your repository. It's different from both working directory and repository in that in a working directory 'untracked files' (not added to the repository yet) along with 'tracked files' (committed and added to the repository) can co-exit, while in the repository only committed files are found. In the staging area files that are waiting to be committed, so it can move to the repository, exit.
+	Staging area offers a great value in which it gives you the ability to group more that one file, in your opinion that relate to the same logical change (for example an added feature that required a change to be made in two files), into a single commit.

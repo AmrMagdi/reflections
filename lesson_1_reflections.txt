@@ -1,0 +1,33 @@
+How did viewing a diff between two versions help you spot the bug?
+
+	It lets you visually see what change has been done, hence you can revert each change to what it was and to separately check the changes to duplicate what caused the bug to happen.
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+	It gives you the ability to look through a 'directors lens' to the file, preserving the iteration of changes done throughout the course of writing the file and how the code developed to its final version. This helps you track what could have been done better, what should have been taken into consideration before written a certain line, and so on. It re-forces you to remember the way of thinking that was followed while writing the file and to spot the deficiencies in that way of thinking.
+	
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+	
+	Pros: 
+		You decide what is important and needs to be committed, when to do so, and what can be neglected.
+		You willingly specify what this particular commit is all about through the message related to it. 
+
+	Cons:
+		In the train of coding you may miss the thought of saving which would result in a bulk of changes at once.
+		If a failure occurs and you forgot to save, all of your work done after your last save simply went into thin air. 
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+	Probably due to the fact that, version control systems, like Git, is made having in mind working with files that contain code, these files in principle contain dependencies between each other, thus changes across a file would require a change to be made somewhere else to keep the code consistent.
+	On the other hand, Google Docs is created as an online storage platform which in turn means that it's expecting to deal with files that have no relevance to each other, stand alone files, meaning changing one file is not supposed to result in a change in another file. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+	If you use the command 'git log' the result is the series of commits done throughout the project with each commit having an ID, author, and date.
+	On the other hand, 'git diff' takes two arguments 'file_1' and 'file_2', which here would be the ID of the two commits, and compares them showing the differences between the two files. This difference clarifies the insertions and deletions that have been done in the two files.
+
+How might using version control make you more confident to make changes that could break something?
+	
+	The existence of 'git checkout' command in git, or the ability in version control to revert to previous versions of your project files, had made it easier to check the previous commits you made and go back to the state at which the project was in when that commit was made. This provides the ability to track the alterations made in the project and find out where the bug was first introduced.   
