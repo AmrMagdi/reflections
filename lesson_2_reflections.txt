@@ -25,4 +25,17 @@ What are some situations when branches would be helpful in keeping your history 
 
 How do the diagrams help you visualize the branch structure?
 
-	It shows you the sequence of made commits in each branch, when a new branch was created, and what are the commits that got made in that new branch, all in a visual way easy for you to comprehend. 
+	It shows you the sequence of made commits in each branch, when a new branch was created, and what are the commits that got made in that new branch, all in a visual way easy for you to comprehend.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	Merging two branches together results in adding the commits of the two branches together, these commits when you run 'git log' will be shown ordered in a chronological order.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Pros:- 
+		-Relives you for the hassle of looking into each file you're gonna merge and find out the common sections that's gonna be merged.
+		-In case of conflicts in merging git doesn't take any reckless actions, rather it returns to the user for advice by specifying where the conflict is and requires a manual conflict resolution from the user.
+
+	Cons:-
+		-Can't deal with merge conflicts which in case of manual merging won't exist in the first place, for example when there are two versions of the same function (a code that occupies the same space in the two files to be merged) git can't specify which one to use, this would need a checker to run the two versions of code to find out which one is better in terms of performance, execution time, ... etc., a thing that is not present in git.
