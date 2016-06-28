@@ -1,1 +1,4 @@
 When would you want to create a remote repository rather than keeping all your work local?
+
+	In case of failure; your hardware may fail and it would be better if a copy of your data was kept somewhere safe online so you can retrieve it and continue your work after the failure has been resolved
+
