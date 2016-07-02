@@ -7,3 +7,11 @@ Why might you want to always pull changes manually rather than having Git automa
 	Because the project at hand may be a collaboration between many people, a new file (or commit) might be added by one of the collaborators to the remote repository, this file, if git automatically pulls changes from the remote repository, may cause a problem with the version of the local project I'm currently working on.
 
 	It's better to always pull changes manually as in such case you are handpicking the commits you are about to pull before doing so.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+	Forks: Runs on two repositories, making a copy of on-line (github) repository into your own github repository without alteration to the original repository this is done online, and then you can clone it to your machine for edit. Used when you wish to make some changes to someone else's project while keeping his version intact with referring back to whose project this is (giving him recognition for the work he's done).
+
+	Clone: Runs on two repositories, making a copy of a repository either from a remote machine to your local machine or from a local machine to another. Used when you want to have a local version of a repository that you can alter and experiment with before updating the original version.
+
+	Branches: Runs on the same repository, makes a different path of your work (fork in the road) where you can add new features to your project, make beta versions or run more test without compromising your original working path (the version you share with other people, the working version), and if these new additions seems promising you can merge them with your working version to update your project with these new features.
