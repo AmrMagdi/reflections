@@ -15,3 +15,8 @@ Describe the differences between forks, clones, and branches. When would you use
 	Clone: Runs on two repositories, making a copy of a repository either from a remote machine to your local machine or from a local machine to another. Used when you want to have a local version of a repository that you can alter and experiment with before updating the original version.
 
 	Branches: Runs on the same repository, makes a different path of your work (fork in the road) where you can add new features to your project, make beta versions or run more test without compromising your original working path (the version you share with other people, the working version), and if these new additions seems promising you can merge them with your working version to update your project with these new features.
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	This lets you keep track of what changes happen on the remote branches, and by using "git fetch" you can have access to the latest updates that have been made to the remote since you last synced up, while you were off-line. But you don't have to act on combining these commits right away, you can have the time to check what changes have been introduced before you perform the merge to combine the commits.
