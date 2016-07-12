@@ -20,3 +20,15 @@ Describe the differences between forks, clones, and branches. When would you use
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 	This lets you keep track of what changes happen on the remote branches, and by using "git fetch" you can have access to the latest updates that have been made to the remote since you last synced up, while you were off-line. But you don't have to act on combining these commits right away, you can have the time to check what changes have been introduced before you perform the merge to combine the commits.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+	You can use other technologies like Dropbox or Google drive to have your files available online to be shared among multiple parties and persons. In these technologies you would create a shared folder to add in the files of your project. 
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+	Since master is the branch where your stable work and working project that people see exists, you tend to make changes to your project in a separate branch in case of developing a new feature, beta version of the project, conducting thorough tests on a module, or experiment with changes you wish to perform... 
+
+	Working with separate branches than master gives you the ability of introducing new changes to your project without recking the current working version that the public sees and tries. This approach still provides some difficulties since you would have to merge your work into the master branch and fix the arising conflicts which implies some extra work on you as a programmer.
+
+	On the other hand, although working with master directly is easier since all you would do is to push and pull changes, it still leaves you vulnerable to messing up your work which may lead to leaving your project's users with a not working version.  
